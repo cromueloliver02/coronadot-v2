@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+:root {
+	--primary-color: #08598f;
+	--text-color: #39515e;
+	--dark-color: #0f4c75;
+	--light-color: #bbe1fa;
+	/* --infected-color: #c70039; */
+	--infected-color: #af0233;
+	/* --recovered-color: #28df99; */
+	--recovered-color: #20ac76;
+	/* --deaths-color: #1b262c; */
+	--deaths-color: #283942;
+	/* --active-color: #fdb827; */
+	--active-color: #dfa527;
+}
+
+.logo a {
+	color: var(--primary-color) !important;
+}
+.logo a:hover {
+	color: var(--primary-color) !important;
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Source Sans Pro', Segoe UI, Tahoma, Geneva, Verdana, sans-serif !important;
+	color: var(--text-color) !important;
+	background: #fff !important;
+}
+
+.table-country-name:hover {
+	cursor: pointer;
+}
+
+/* UTILITY CLASSES */
+.text-color {
+	color: var(--text-color);
+}
+.primary-text {
+	color: var(--primary-color);
+}
+.infected-text {
+	color: var(--infected-color);
+}
+.bg-infected-today {
+	background: rgba(175, 2, 51, 0.85);
+	color: #f4f4f4;
+}
+.recovered-text {
+	color: var(--recovered-color);
+}
+.bg-recovered {
+	background: var(--recovered-color);
+}
+.bg-recovered-today {
+	background: rgba(32, 172, 118, 0.85);
+	color: #f4f4f4;
+}
+.deaths-text {
+	color: var(--deaths-color);
+}
+.bg-deaths {
+	background: var(--deaths-color);
+}
+.bg-deaths-today {
+	background: rgba(40, 57, 66, 0.85);
+	color: #f4f4f4;
+}
+.active-text {
+	color: var(--active-color);
+}
+.bg-active {
+	background: var(--active-color);
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	/* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.logo {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.country-name {
+	font-size: 1.5rem;
+}
+.country-flag {
+	height: 40px;
+}
+
+.custom-card {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+	border: 1px solid #ddd;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-radius: 8px;
+	padding: 1rem;
+}
+.card-infected {
+	border-bottom: 10px solid var(--infected-color);
+}
+.card-recovered {
+	border-bottom: 10px solid var(--recovered-color);
+}
+.card-deaths {
+	border-bottom: 10px solid var(--deaths-color);
+}
+.card-active {
+	border-bottom: 10px solid var(--active-color);
+}
+.result-title {
+	font-size: 1.25rem;
+	color: rgb(107, 107, 107);
+}
+.result-num {
+	font-size: 2.25rem;
+	font-weight: 600;
+}
+.today-cases {
+	font-size: 1rem;
+	font-weight: 600;
+}
+.current-date {
+	color: rgb(107, 107, 107);
+}
+
+.footer {
+	background: #f0f0f0;
+}
+
+@media (max-width: 992px) {
+	.mb-resp-3 {
+		margin-bottom: 1rem;
+	}
+
+	.logo {
+		text-align: center !important;
+	}
+
+	.header-content {
+		/* display: flex;
+		flex-direction: column;
+		justify-content: space-between; */
+		display: block;
+		width: 100%;
+	}
+}
